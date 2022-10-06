@@ -47,7 +47,13 @@
       "options": {
         "command": "npx semantic-release-plus --extends ./libs/auth/release.config.js",
         "parallel": false
-      }
+      },
+      "dependsOn": [
+        {
+          "projects": "self",
+          "target": "build"
+        }
+      ]
     }
   },
   "tags": []
