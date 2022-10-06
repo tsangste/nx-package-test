@@ -6,7 +6,7 @@ module.exports = {
   pkgRoot: `dist/${srcRoot}`,
   branches: [
     { name: 'master' },
-    { name: 'release/*', channel: 'beta', prerelease: 'beta' },
+    { name: 'stabilise', channel: 'beta', prerelease: 'beta' },
     { name: 'develop', channel: 'alpha', prerelease: 'alpha' },
   ],
   tagFormat: name + '-${version}',
