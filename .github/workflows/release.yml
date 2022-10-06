@@ -11,8 +11,15 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://npm.pkg.github.com'
 
       - uses: nrwl/nx-set-shas@v3
+        with:
+          main-branch-name: 'master'
+
       - run: npm ci
 
       - run: npx nx workspace-lint
@@ -24,7 +31,7 @@ jobs:
       - name: Release
         if: success()
         env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx nx affected --target release --all
           npx semantic-release-plus
