@@ -1,5 +1,13 @@
 {
   "name": "@tsangste/storage",
-  "version": "0.0.1",
-  "type": "commonjs"
+  "version": "0.0.0-semantic-release",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsangste/nx-package-test.git",
+    "directory": "libs/storage"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
