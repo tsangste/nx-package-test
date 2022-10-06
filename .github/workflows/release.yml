@@ -34,4 +34,3 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx nx affected --target release --all
-          npx semantic-release-plus
