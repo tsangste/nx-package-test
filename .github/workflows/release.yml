@@ -27,6 +27,6 @@ jobs:
       - name: Release
         if: success()
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx nx affected --target release --all
