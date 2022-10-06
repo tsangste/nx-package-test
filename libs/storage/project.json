@@ -1,23 +1,23 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/auth/src",
+  "sourceRoot": "libs/storage/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/auth",
-        "tsConfig": "libs/auth/tsconfig.lib.json",
-        "packageJson": "libs/auth/package.json",
-        "main": "libs/auth/src/index.ts",
-        "assets": ["libs/auth/*.md"]
+        "outputPath": "dist/libs/storage",
+        "tsConfig": "libs/storage/tsconfig.lib.json",
+        "packageJson": "libs/storage/package.json",
+        "main": "libs/storage/src/index.ts",
+        "assets": ["libs/storage/*.md"]
       }
     },
     "publish": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "command": "node tools/scripts/publish.mjs auth {args.ver} {args.tag}"
+        "command": "node tools/scripts/publish.mjs storage {args.ver} {args.tag}"
       },
       "dependsOn": [
         {
@@ -30,14 +30,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/auth/**/*.ts"]
+        "lintFilePatterns": ["libs/storage/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/auth"],
+      "outputs": ["coverage/libs/storage"],
       "options": {
-        "jestConfig": "libs/auth/jest.config.ts",
+        "jestConfig": "libs/storage/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -45,7 +45,7 @@
       "executor": "nx:run-commands",
       "outputs": [],
       "options": {
-        "command": "npx semantic-release-plus --extends ./libs/auth/release.config.js",
+        "command": "npx semantic-release-plus --extends ./libs/storage/release.config.js",
         "parallel": false
       },
       "dependsOn": [

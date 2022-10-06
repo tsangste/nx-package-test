@@ -1,4 +1,4 @@
-const name = 'auth'
+const name = 'storage'
 const srcRoot = `libs/${name}`
 
 module.exports = {
