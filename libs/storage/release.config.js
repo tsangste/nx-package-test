@@ -1,5 +1,5 @@
-const name = 'storage';
-const srcRoot = `libs/${name}`;
+const name = 'storage'
+const srcRoot = `libs/${name}`
 
 module.exports = {
   extends: 'release.config.base.js',
@@ -20,9 +20,7 @@ module.exports = {
       '@semantic-release/git',
       {
         assets: [`${srcRoot}/package.json`, `${srcRoot}/CHANGELOG.md`],
-        message:
-          `release(version): Release ${name} ` +
-          '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+        message: `release(version): Release ${name} ` + '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
   ],
