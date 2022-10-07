@@ -2,6 +2,8 @@ name: Release
 on:
   push:
     branches:
+      - develop
+      - stabilise
       - master
 
 jobs:
@@ -12,9 +14,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: nelonoel/branch-name@v1.0.1
       - uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: 'master'
+          main-branch-name: ${{ env.BRANCH_NAME }}
 
       - run: npm ci
 
