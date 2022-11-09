@@ -13,7 +13,10 @@ module.exports = {
   commitPaths: [`${srcRoot}/*`],
   plugins: [
     '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
+    ["semantic-release-jira-notes", {
+      "jiraHost": "test.atlassian.net",
+      "ticketPrefixes": ["JIRA"]
+    }],
     [
       '@semantic-release/changelog',
       {
