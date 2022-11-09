@@ -1,3 +1,10 @@
+# [1.1.0-alpha.1](https://github.com/tsangste/nx-package-test/compare/storage-1.0.0...storage-1.1.0-alpha.1) (2022-11-09)
+
+
+### Features
+
+* **auth:** add allow anonymous decorator | [JIRA-123](https://test.atlassian.net/browse/JIRA-123) ([#5](https://github.com/tsangste/nx-package-test/issues/5)) ([7dc7c56](https://github.com/tsangste/nx-package-test/commit/7dc7c56c6119e4162db1987547d29a9afb15e38c))
+
 # 1.0.0 (2022-10-06)
 
 
