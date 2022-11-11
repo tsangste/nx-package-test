@@ -1,13 +1,8 @@
 name: Release
 on:
-  workflow_dispatch:
-    inputs:
-      package:
-        type: choice
-        description: Select package to publish
-        options:
-          - auth
-          - storage
+  push:
+    branches:
+      - develop
 
 jobs:
   main:
@@ -34,4 +29,4 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx nx run ${{ inputs.package }}:release
+          npx nx affected --target=release
