@@ -6,7 +6,10 @@ import {
   generateFiles,
   joinPathFragments,
   readProjectConfiguration,
+  formatFiles,
+  installPackagesTask
 } from '@nrwl/devkit'
+import { libraryGenerator } from '@nrwl/nest'
 import { parse, stringify } from 'yaml'
 
 interface SemanticReleaseOptions {
@@ -14,6 +17,8 @@ interface SemanticReleaseOptions {
 }
 
 export default async function (tree: Tree, schema: SemanticReleaseOptions) {
+  await libraryGenerator(tree, { name: schema.name, importPath: `@tsangste/${schema.name}`, publishable: true })
+
   const libraryRoot = readProjectConfiguration(tree, schema.name).root
 
   generateFiles(
@@ -51,6 +56,12 @@ export default async function (tree: Tree, schema: SemanticReleaseOptions) {
     yml.on.workflow_dispatch.inputs.package.options.push(schema.name)
     return yml
   })
+
+  await formatFiles(tree)
+
+  return () => {
+    installPackagesTask(tree);
+  }
 }
 
 function updateYaml(tree: Tree, path: string, updater: (yml) => any) {
