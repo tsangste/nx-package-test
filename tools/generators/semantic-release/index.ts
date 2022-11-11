@@ -5,6 +5,7 @@ import {
   joinPathFragments,
   readProjectConfiguration
 } from '@nrwl/devkit'
+import { parse, stringify } from 'yaml'
 
 interface SemanticReleaseOptions {
   name: string
@@ -43,4 +44,29 @@ export default async function (tree: Tree, schema: SemanticReleaseOptions) {
 
     return prJson
   })
+
+  updateYaml(tree, `.github/release.yml`, yml => {
+    yml.on.workflow_dispatch.inputs.package.options.push(schema.name)
+    return yml
+  })
+}
+
+function updateYaml(tree: Tree, path: string, updater: (yml) => any) {
+  const updatedYaml = updater(readYaml(tree, path))
+  writeYaml(tree, path, updatedYaml)
+}
+
+function readYaml(tree: Tree, path: string) {
+  if (!tree.exists(path)) {
+    throw new Error(`Cannot find ${path}`)
+  }
+  try {
+    return parse(tree.read(path, 'utf-8'))
+  } catch (e) {
+    throw new Error(`Cannot parse ${path}: ${e.message}`)
+  }
+}
+
+function writeYaml(tree: Tree, path: string, value: any) {
+  tree.write(path, stringify(value))
 }
