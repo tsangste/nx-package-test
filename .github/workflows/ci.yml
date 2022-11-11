@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - develop
+      - stabilise
       - master
     types:
       - opened
