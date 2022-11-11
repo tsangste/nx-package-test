@@ -1,9 +1,11 @@
+import { join } from 'path'
+
 import {
   Tree,
   updateJson,
   generateFiles,
   joinPathFragments,
-  readProjectConfiguration
+  readProjectConfiguration,
 } from '@nrwl/devkit'
 import { parse, stringify } from 'yaml'
 
@@ -21,12 +23,12 @@ export default async function (tree: Tree, schema: SemanticReleaseOptions) {
     schema
   )
 
-  updateJson(tree, `${libraryRoot}/package.json`, pkgJson => {
+  updateJson(tree, join(libraryRoot, 'package.json'), pkgJson => {
     pkgJson.version = '0.0.0-semantic-release'
     return pkgJson
   })
 
-  updateJson(tree, `${libraryRoot}/project.json`, prJson => {
+  updateJson(tree, join(libraryRoot, 'project.json'), prJson => {
     prJson.targets.release = {
       "executor": "nx:run-commands",
       "outputs": [],
@@ -45,7 +47,7 @@ export default async function (tree: Tree, schema: SemanticReleaseOptions) {
     return prJson
   })
 
-  updateYaml(tree, `.github/release.yml`, yml => {
+  updateYaml(tree, join(tree.root, '.github', 'release.yml'), yml => {
     yml.on.workflow_dispatch.inputs.package.options.push(schema.name)
     return yml
   })
