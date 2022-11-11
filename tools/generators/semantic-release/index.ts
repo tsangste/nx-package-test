@@ -1,17 +1,16 @@
 import {
   Tree,
-  installPackagesTask,
   updateJson,
   generateFiles,
   joinPathFragments,
   readProjectConfiguration
 } from '@nrwl/devkit'
 
-interface SemanticReleaseArgs {
+interface SemanticReleaseOptions {
   name: string
 }
 
-export default async function (tree: Tree, schema: SemanticReleaseArgs) {
+export default async function (tree: Tree, schema: SemanticReleaseOptions) {
   const libraryRoot = readProjectConfiguration(tree, schema.name).root
 
   generateFiles(
@@ -21,12 +20,12 @@ export default async function (tree: Tree, schema: SemanticReleaseArgs) {
     schema
   )
 
-  updateJson(tree, 'package.json', pkgJson => {
+  updateJson(tree, `${libraryRoot}/package.json`, pkgJson => {
     pkgJson.version = '0.0.0-semantic-release'
     return pkgJson
   })
 
-  updateJson(tree, 'project.json', prJson => {
+  updateJson(tree, `${libraryRoot}/project.json`, prJson => {
     prJson.targets.release = {
       "executor": "nx:run-commands",
       "outputs": [],
@@ -44,8 +43,4 @@ export default async function (tree: Tree, schema: SemanticReleaseArgs) {
 
     return prJson
   })
-
-  return () => {
-    installPackagesTask(tree)
-  }
 }
