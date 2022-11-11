@@ -47,7 +47,7 @@ export default async function (tree: Tree, schema: SemanticReleaseOptions) {
     return prJson
   })
 
-  updateYaml(tree, join(tree.root, '.github', 'release.yml'), yml => {
+  updateYaml(tree, join('.github', 'workflows', 'release.yml'), yml => {
     yml.on.workflow_dispatch.inputs.package.options.push(schema.name)
     return yml
   })
