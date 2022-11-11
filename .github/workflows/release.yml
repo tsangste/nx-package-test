@@ -1,8 +1,13 @@
 name: Release
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+    inputs:
+      package:
+        type: choice
+        description: Select package to publish
+        options:
+          - auth
+          - storage
 
 jobs:
   main:
@@ -12,9 +17,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: nelonoel/branch-name@v1.0.1
       - uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: 'master'
+          main-branch-name: ${{ env.BRANCH_NAME }}
 
       - run: npm ci
 
@@ -28,4 +34,4 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx nx affected --target release --all
+          npx nx run ${{ inputs.package }}:release

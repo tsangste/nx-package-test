@@ -1,9 +1,8 @@
-name: Pre-Release
+name: CD
 on:
   push:
     branches:
       - develop
-      - stabilise
 
 jobs:
   main:
@@ -30,4 +29,4 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx nx affected --target release --all
+          npx nx affected --target=release
