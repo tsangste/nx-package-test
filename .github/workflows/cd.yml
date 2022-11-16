@@ -12,10 +12,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: nelonoel/branch-name@v1.0.1
       - uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: ${{ env.BRANCH_NAME }}
+          main-branch-name: ${{ github.ref_name }}
 
       - run: npm ci
 
