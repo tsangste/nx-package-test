@@ -1,4 +1,4 @@
-const name = 'auth'
+const name = '<%=name%>'
 const srcRoot = `libs/${name}`
 
 module.exports = {
@@ -13,10 +13,7 @@ module.exports = {
   commitPaths: [`${srcRoot}/*`],
   plugins: [
     '@semantic-release/commit-analyzer',
-    ["semantic-release-jira-notes", {
-      "jiraHost": "test.atlassian.net",
-      "ticketPrefixes": ["JIRA"]
-    }],
+    '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
       {

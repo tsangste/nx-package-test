@@ -1,9 +1,8 @@
-name: Pre-Release
+name: CD
 on:
   push:
     branches:
       - develop
-      - stabilise
 
 jobs:
   main:
@@ -13,10 +12,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: nelonoel/branch-name@v1.0.1
       - uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: ${{ env.BRANCH_NAME }}
+          main-branch-name: ${{ github.ref_name }}
 
       - run: npm ci
 
@@ -30,4 +28,4 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx nx affected --target release --all
+          npx nx affected --target=release

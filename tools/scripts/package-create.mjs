@@ -6,4 +6,4 @@ if (!name) {
   throw new Error('missing name argument')
 }
 
-execSync(`nx generate @nrwl/nest:lib ${name} --importPath @tsangste/${name} --publishable`, {stdio: 'inherit'});
+execSync(`nx workspace-generator semantic-release ${name}`, {stdio: 'inherit'});

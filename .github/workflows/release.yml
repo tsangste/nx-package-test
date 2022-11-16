@@ -1,8 +1,13 @@
 name: Release
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+    inputs:
+      package:
+        type: choice
+        description: Select package to publish
+        options:
+          - auth
+          - storage
 
 jobs:
   main:
@@ -14,7 +19,7 @@ jobs:
 
       - uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: 'master'
+          main-branch-name: ${{ github.ref_name }}
 
       - run: npm ci
 
@@ -28,4 +33,4 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx nx affected --target release --all
+          npx nx run ${{ inputs.package }}:release
