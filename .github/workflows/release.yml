@@ -32,5 +32,6 @@ jobs:
         if: success()
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx nx run ${{ inputs.package }}:release
