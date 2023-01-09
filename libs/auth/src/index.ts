@@ -1,2 +1,3 @@
+export * from './@types'
 export * from './auth.module'
-export * from './decorators/allow-anonymous.decorator'
+export * from './guards/auth.guard'
