@@ -1,3 +1,17 @@
+# [1.2.0-beta.1](https://github.com/tsangste/nx-package-test/compare/auth-1.1.0...auth-1.2.0-beta.1) (2022-11-17)
+
+
+### Features
+
+* **auth:** make module global ([78f7d56](https://github.com/tsangste/nx-package-test/commit/78f7d5637810d4131b670c733156baab1df1bbaf))
+
+# [1.2.0-alpha.1](https://github.com/tsangste/nx-package-test/compare/auth-1.1.0...auth-1.2.0-alpha.1) (2022-11-17)
+
+
+### Features
+
+* **auth:** make module global ([78f7d56](https://github.com/tsangste/nx-package-test/commit/78f7d5637810d4131b670c733156baab1df1bbaf))
+
 # [1.1.0](https://github.com/tsangste/nx-package-test/compare/auth-1.0.0...auth-1.1.0) (2022-11-16)
 
 
