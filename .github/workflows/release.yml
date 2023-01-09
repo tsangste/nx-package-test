@@ -6,7 +6,7 @@ on:
         type: choice
         description: Select package to publish
         options:
-          - auth
+          - nestjs-auth
           - storage
 
 jobs:

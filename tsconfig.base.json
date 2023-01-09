@@ -16,8 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tsangste/nestjs-auth": ["libs/auth/src/index.ts"],
-      "@tsangste/nestjs-auth/*": ["libs/auth/src/*"],
+      "@tsangste/nestjs-auth": ["libs/nestjs-auth/src/index.ts"],
+      "@tsangste/nestjs-auth/*": ["libs/nestjs-auth/src/*"],
       "@tsangste/storage": ["libs/storage/src/index.ts"]
     }
   },

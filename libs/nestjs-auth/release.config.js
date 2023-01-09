@@ -1,4 +1,4 @@
-const name = 'auth'
+const name = 'nestjs-auth'
 const srcRoot = `libs/${name}`
 
 module.exports = {
