@@ -7,6 +7,7 @@ on:
         description: Select package to publish
         options:
           - nestjs-auth
+          - nestjs-logger
           - storage
 
 jobs:
@@ -24,10 +25,10 @@ jobs:
           source_ref: develop
           target_branch: master
           allow_fast_forward: false
-
   build_package:
     name: build package
-    needs: [ dev_to_master ]
+    needs:
+      - dev_to_master
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repo
@@ -52,10 +53,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx nx run ${{ inputs.package }}:release
-
   master_to_dev:
     name: merge master into dev
-    needs: [ dev_to_master, build_package ]
+    needs:
+      - dev_to_master
+      - build_package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repo

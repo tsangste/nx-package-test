@@ -15,9 +15,11 @@
     "@nestjs/core": "^9.2.0",
     "@nestjs/platform-express": "^9.2.0",
     "@nrwl/nest": "15.4.5",
+    "nest-winston": "^1.9.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.7",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "@nestjs/schematics": "^9.0.3",
