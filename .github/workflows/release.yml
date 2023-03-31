@@ -38,7 +38,7 @@ jobs:
       - name: Set NX sha
         uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: master
+          main-branch-name: ${{ github.ref_name }}
       - name: NPM clean install
         run: npm ci
       - run: npx nx workspace-lint
