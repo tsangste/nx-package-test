@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Merge branch
         uses: emiliopedrollo/auto-merge@v1.2.0
-        if: github.ref_name == 'master'
+        if: github.ref_name == 'develop'
         with:
           github_token: ${{ github.token }}
           source_ref: develop
@@ -33,12 +33,12 @@ jobs:
       - name: Checkout git repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          ref: master
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Set NX sha
         uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: ${{ github.ref_name }}
+          main-branch-name: master
       - name: NPM clean install
         run: npm ci
       - run: npx nx workspace-lint
