@@ -28,7 +28,7 @@ jobs:
 
   build_package:
     name: build package
-    if: ${{ github.ref_name == 'develop' || needs.dev_to_master.result != 'failure' }}
+    needs: [ dev_to_master ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repo
@@ -56,7 +56,6 @@ jobs:
 
   master_to_dev:
     name: merge master into dev
-    if: github.ref_name == 'master'
     needs: [ dev_to_master, build_package ]
     runs-on: ubuntu-latest
     steps:
