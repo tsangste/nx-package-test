@@ -52,7 +52,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx nx run ${{ inputs.package }}:release
+          GITHUB_REF=master npx nx run ${{ inputs.package }}:release
   master_to_dev:
     name: merge master into dev
     needs:
