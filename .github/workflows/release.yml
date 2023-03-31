@@ -8,7 +8,7 @@ on:
         options:
           - nestjs-auth
           - nestjs-logger
-          - storage
+          - nestjs-storage
 jobs:
   dev_to_master:
     name: merge dev into master
