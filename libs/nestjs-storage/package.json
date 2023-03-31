@@ -1,11 +1,11 @@
 {
-  "name": "@tsangste/storage",
+  "name": "@tsangste/nestjs-storage",
   "version": "0.0.0-semantic-release",
   "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/tsangste/nx-package-test.git",
-    "directory": "libs/storage"
+    "directory": "libs/nestjs-storage"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

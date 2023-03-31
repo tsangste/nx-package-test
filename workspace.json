@@ -4,6 +4,7 @@
   "projects": {
     "api": "apps/api",
     "nestjs-auth": "libs/nestjs-auth",
-    "storage": "libs/storage"
+    "nestjs-logger": "libs/nestjs-logger",
+    "nestjs-storage": "libs/nestjs-storage"
   }
 }

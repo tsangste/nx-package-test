@@ -18,7 +18,8 @@
     "paths": {
       "@tsangste/nestjs-auth": ["libs/nestjs-auth/src/index.ts"],
       "@tsangste/nestjs-auth/*": ["libs/nestjs-auth/src/*"],
-      "@tsangste/storage": ["libs/storage/src/index.ts"]
+      "@tsangste/nestjs-logger": ["libs/nestjs-logger/src/index.ts"],
+      "@tsangste/nestjs-storage": ["libs/nestjs-storage/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

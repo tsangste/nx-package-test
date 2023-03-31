@@ -7,8 +7,8 @@ on:
         description: Select package to publish
         options:
           - nestjs-auth
-          - storage
-
+          - nestjs-logger
+          - nestjs-storage
 jobs:
   dev_to_master:
     name: merge dev into master
@@ -18,27 +18,28 @@ jobs:
         uses: actions/checkout@v3
       - name: Merge branch
         uses: emiliopedrollo/auto-merge@v1.2.0
-        if: github.ref_name == 'master'
+        if: github.ref_name == 'develop'
         with:
           github_token: ${{ github.token }}
           source_ref: develop
           target_branch: master
           allow_fast_forward: false
-
   build_package:
     name: build package
-    needs: [ dev_to_master ]
+    needs:
+      - dev_to_master
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repo
         uses: actions/checkout@v3
         with:
+          ref: master
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Set NX sha
         uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: ${{ github.ref_name }}
+          main-branch-name: master
       - name: NPM clean install
         run: npm ci
       - run: npx nx workspace-lint
@@ -51,11 +52,12 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx nx run ${{ inputs.package }}:release
-
+          GITHUB_REF=master npx nx run ${{ inputs.package }}:release
   master_to_dev:
     name: merge master into dev
-    needs: [ dev_to_master, build_package ]
+    needs:
+      - dev_to_master
+      - build_package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repo
