@@ -11,7 +11,9 @@
   },
   "private": true,
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.304.0",
     "@nestjs/common": "^9.2.0",
+    "@nestjs/config": "^2.3.1",
     "@nestjs/core": "^9.2.0",
     "@nestjs/platform-express": "^9.2.0",
     "@nrwl/nest": "15.4.5",
