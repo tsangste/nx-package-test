@@ -2,6 +2,14 @@
   "name": "@tsangste/nestjs-logger",
   "version": "0.0.0-semantic-release",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsangste/nx-package-test.git",
+    "directory": "libs/nestjs-logger"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "peerDependencies": {
     "@nestjs/common": "^8.0.0 || ^9.0.0",
     "@nestjs/core": "^8.0.0 || ^9.0.0",

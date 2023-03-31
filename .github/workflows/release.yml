@@ -9,7 +9,6 @@ on:
           - nestjs-auth
           - nestjs-logger
           - storage
-
 jobs:
   dev_to_master:
     name: merge dev into master
