@@ -1,5 +1,5 @@
-import { Global, MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common'
 import { APP_GUARD, REQUEST } from '@nestjs/core'
+import { Global, MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common'
 
 import { Request } from 'express'
 

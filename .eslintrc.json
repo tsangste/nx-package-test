@@ -1,7 +1,7 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nrwl/nx"],
+  "plugins": ["@nrwl/nx", "unicorn", "simple-import-sort"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -18,13 +18,99 @@
               }
             ]
           }
+        ],
+        "max-len": [
+          "error", {
+            "code": 120,
+            "ignoreUrls": true,
+            "ignoreStrings": true
+          }
+        ],
+        "unicorn/prefer-node-protocol": "error",
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              // Side effect imports.
+              ["^\\u0000"],
+              // Native node packages.
+              ["^node:"],
+              // Packages `nestjs` related packages come first.
+              ["@nestjs/testing", "@nestjs/core", "@nestjs/common", "^(@nestjs)(/.*|$)"],
+              // External packages
+              ["^@?\\w"],
+              // Internal packages.
+              ["^(@tsangste)(/.*|$)"],
+              // Service alias.
+              ["^(~)(/.*.module)", "^(~)(/.*.controller)", "^(~)(/.*.service)", "^(~)(/.*|$)"],
+              // Parent imports. Put `..` last.
+              [
+                "^\\.\\.(/.*.module)",
+                "^\\.\\.(/.*.controller)",
+                "^\\.\\.(/.*.service)",
+                "^\\.\\.(?!/?$)",
+                "^\\.\\./?$"
+              ],
+              // Other relative imports. Put same-folder imports and `.` last.
+              [
+                "^.+\\.s?module",
+                "^.+\\.s?controller",
+                "^.+\\.s?service",
+                "^\\./(?=.*/)(?!/?$)",
+                "^\\.(?!/?$)",
+                "^\\./?$"
+              ]
+            ]
+          }
         ]
       }
     },
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": ["*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "tsconfig.base.json",
+        "sourceType": "module"
+      },
+      "plugins": [
+        "@typescript-eslint/eslint-plugin"
+      ],
       "extends": ["plugin:@nrwl/nx/typescript"],
-      "rules": {}
+      "rules": {
+        "@typescript-eslint/no-empty-function": [
+          "error",
+          {
+            "allow": ["arrowFunctions"]
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "argsIgnorePattern": "^_", "ignoreRestSiblings": true
+          }
+        ],
+        "@typescript-eslint/no-misused-promises": "error",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/semi": "off",
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "variable",
+            "modifiers": [
+              "const", "exported"
+            ],
+            "types": [
+              "function"
+            ],
+            "format": [
+              "camelCase", "PascalCase"
+            ]
+          }
+        ]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
