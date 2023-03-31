@@ -1,3 +1,10 @@
+# [1.3.0-dev.1](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.2.0...nestjs-auth-1.3.0-dev.1) (2023-03-31)
+
+
+### Features
+
+* **nestjs-auth:** add user getter ([cec080e](https://github.com/tsangste/nx-package-test/commit/cec080e7ed0d60a6dc9b3e0aef96ffe48b78c8aa))
+
 # [1.3.0-alpha.1](https://github.com/tsangste/nx-package-test/compare/auth-1.2.0...auth-1.3.0-alpha.1) (2023-01-09)
 
 
