@@ -1,18 +1,18 @@
 {
-  "name": "auth",
+  "name": "nestjs-auth",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/auth/src",
+  "sourceRoot": "/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/auth",
-        "tsConfig": "libs/auth/tsconfig.lib.json",
-        "packageJson": "libs/auth/package.json",
-        "main": "libs/auth/src/index.ts",
-        "assets": ["libs/auth/*.md"]
+        "outputPath": "dist/libs/nestjs-auth",
+        "tsConfig": "libs/nestjs-auth/tsconfig.lib.json",
+        "packageJson": "libs/nestjs-auth/package.json",
+        "main": "libs/nestjs-auth/src/index.ts",
+        "assets": ["libs/nestjs-auth/*.md"]
       }
     },
     "publish": {
@@ -31,14 +31,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/auth/**/*.ts"]
+        "lintFilePatterns": ["libs/nestjs-auth/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/libs/auth"],
+      "outputs": ["{workspaceRoot}/coverage/libs/nestjs-auth"],
       "options": {
-        "jestConfig": "libs/auth/jest.config.ts",
+        "jestConfig": "libs/nestjs-auth/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -46,7 +46,7 @@
       "executor": "nx:run-commands",
       "outputs": [],
       "options": {
-        "command": "npx semantic-release-plus --extends ./libs/auth/release.config.js",
+        "command": "npx semantic-release-plus --extends ./libs/nestjs-auth/release.config.js",
         "parallel": false
       },
       "dependsOn": [

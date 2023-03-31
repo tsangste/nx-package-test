@@ -1,3 +1,10 @@
+# [1.3.0-alpha.1](https://github.com/tsangste/nx-package-test/compare/auth-1.2.0...auth-1.3.0-alpha.1) (2023-01-09)
+
+
+### Features
+
+* **auth:** add middleware decoding ([a4885c8](https://github.com/tsangste/nx-package-test/commit/a4885c8b585be22c5b377c51735473cf71efe9e1))
+
 # [1.2.0](https://github.com/tsangste/nx-package-test/compare/auth-1.1.0...auth-1.2.0) (2023-01-09)
 
 

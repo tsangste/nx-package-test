@@ -6,28 +6,46 @@ on:
         type: choice
         description: Select package to publish
         options:
-          - auth
+          - nestjs-auth
           - storage
 
 jobs:
-  main:
+  dev_to_master:
+    name: merge dev into master
+    if: github.ref_name == 'master'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout git repo
+        uses: actions/checkout@v3
+        with:
+          ref: develop
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: emiliopedrollo/auto-merge@v1.2.0
+        with:
+          github_token: ${{ github.token }}
+          target_branch: master
+          allow_fast_forward: false
+
+  build_package:
+    name: build package
+    if: ${{ github.ref_name == 'develop' || needs.dev_to_master.result != 'failure' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout git repo
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
-
-      - uses: nrwl/nx-set-shas@v3
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set NX sha
+        uses: nrwl/nx-set-shas@v3
         with:
           main-branch-name: ${{ github.ref_name }}
-
-      - run: npm ci
-
+      - name: NPM clean install
+        run: npm ci
       - run: npx nx workspace-lint
       - run: npx nx affected --target=lint --parallel=3
       - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
       - run: npx nx affected --target=build --parallel=3
-
       - name: Release
         if: success()
         env:
@@ -35,3 +53,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx nx run ${{ inputs.package }}:release
+
+  master_to_dev:
+    name: merge master into dev
+    if: github.ref_name == 'master'
+    needs: [ dev_to_master, build_package ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout git repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: emiliopedrollo/auto-merge@v1.2.0
+        with:
+          github_token: ${{ github.token }}
+          target_branch: develop
+          allow_fast_forward: false

@@ -3,7 +3,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
-    "auth": "libs/auth",
+    "nestjs-auth": "libs/nestjs-auth",
     "storage": "libs/storage"
   }
 }

@@ -3,11 +3,9 @@ on:
   push:
     branches:
       - master
-      - stabilise
   pull_request:
     branches:
       - develop
-      - stabilise
       - master
     types:
       - opened
