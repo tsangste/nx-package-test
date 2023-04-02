@@ -16,7 +16,6 @@
     "@nestjs/config": "^2.3.1",
     "@nestjs/core": "^9.2.0",
     "@nestjs/platform-express": "^9.2.0",
-    "@nrwl/nest": "15.9.2",
     "nest-winston": "^1.9.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.7",
@@ -31,6 +30,7 @@
     "@nrwl/eslint-plugin-nx": "15.9.2",
     "@nrwl/jest": "15.9.2",
     "@nrwl/linter": "15.9.2",
+    "@nrwl/nest": "^15.9.2",
     "@nrwl/node": "15.9.2",
     "@nrwl/workspace": "15.9.2",
     "@semantic-release/github": "^8.0.6",
@@ -56,4 +56,3 @@
     "yaml": "^2.1.3"
   }
 }
-
