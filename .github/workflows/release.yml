@@ -20,7 +20,7 @@ jobs:
         uses: emiliopedrollo/auto-merge@v1.2.0
         if: github.ref_name == 'develop'
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           source_ref: develop
           target_branch: master
           allow_fast_forward: false
@@ -65,7 +65,7 @@ jobs:
       - name: Merge branch
         uses: emiliopedrollo/auto-merge@v1.2.0
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           source_ref: master
           target_branch: develop
           allow_fast_forward: false
