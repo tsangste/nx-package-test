@@ -9,6 +9,9 @@ on:
           - nestjs-auth
           - nestjs-logger
           - nestjs-storage
+
+concurrency: release
+
 jobs:
   dev_to_master:
     name: merge dev into master
