@@ -1,3 +1,10 @@
+# [1.4.0-dev.1](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.3.0...nestjs-auth-1.4.0-dev.1) (2023-04-05)
+
+
+### Features
+
+* **nestjs-auth:** update user ([6adb914](https://github.com/tsangste/nx-package-test/commit/6adb9149c4b9237f7a5f5f55b194cac81ad1e53f))
+
 # [1.3.0](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.2.0...nestjs-auth-1.3.0) (2023-03-31)
 
 
