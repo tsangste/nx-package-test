@@ -1,3 +1,10 @@
+# [1.4.0-dev.2](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.4.0-dev.1...nestjs-auth-1.4.0-dev.2) (2023-07-04)
+
+
+### Bug Fixes
+
+* **nestjs-auth:** add peerDependencies ([3670003](https://github.com/tsangste/nx-package-test/commit/3670003059df029e371b085fe1fc4b29aaddbd9d))
+
 # [1.4.0-dev.1](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.3.0...nestjs-auth-1.4.0-dev.1) (2023-04-05)
 
 
