@@ -1,9 +1,9 @@
-import { execSync } from 'child_process';
+import { execSync } from 'child_process'
 
-const [, , name] = process.argv;
+const [, , name] = process.argv
 
 if (!name) {
   throw new Error('missing name argument')
 }
 
-execSync(`nx generate @nrwl/workspace:remove ${name} --importPath @tsangste/${name}`, {stdio: 'inherit'});
+execSync(`nx generate @nx/workspace:remove ${name} --importPath @tsangste/${name}`, { stdio: 'inherit' })

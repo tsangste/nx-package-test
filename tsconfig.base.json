@@ -8,7 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "importHelpers": true,
+    "importHelpers": false,
     "target": "es2021",
     "module": "esnext",
     "skipLibCheck": true,
@@ -16,6 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@app/workspace-plugin": ["tools/workspace-plugin/src/index.ts"],
       "@tsangste/nestjs-auth": ["libs/nestjs-auth/src/index.ts"],
       "@tsangste/nestjs-auth/*": ["libs/nestjs-auth/src/*"],
       "@tsangste/nestjs-logger": ["libs/nestjs-logger/src/index.ts"],

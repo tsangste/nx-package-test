@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "semantic-release": {
+      "implementation": "./src/generators/semantic-release",
+      "schema": "./src/generators/semantic-release/schema.json",
+      "description": "Generator semantic-release"
+    }
+  }
+}
