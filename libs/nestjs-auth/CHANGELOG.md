@@ -1,3 +1,10 @@
+# [1.4.0-dev.3](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.4.0-dev.2...nestjs-auth-1.4.0-dev.3) (2023-07-04)
+
+
+### Bug Fixes
+
+* **nestjs-auth:** fix adding of dependencies when building ([81fbd1f](https://github.com/tsangste/nx-package-test/commit/81fbd1f5f2edac637dcd214df968f5483814698f))
+
 # [1.4.0-dev.2](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.4.0-dev.1...nestjs-auth-1.4.0-dev.2) (2023-07-04)
 
 
