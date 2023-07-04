@@ -22,6 +22,12 @@ module.exports = {
         changelogFile: `${srcRoot}/CHANGELOG.md`,
       },
     ],
+    [
+      '@semantic-release/exec',
+      {
+        prepareCmd: `jq 'del(.dependencies)' ./dist/${srcRoot}/package.json | sponge ./dist/${srcRoot}/package.json`,
+      },
+    ],
     '@semantic-release/npm',
     [
       '@semantic-release/git',
