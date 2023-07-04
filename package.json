@@ -34,6 +34,7 @@
     "@nx/nest": "16.4.3",
     "@nx/node": "16.4.3",
     "@nx/plugin": "16.4.3",
+    "@nx/webpack": "^16.4.3",
     "@nx/workspace": "16.4.3",
     "@semantic-release/github": "^8.0.6",
     "@swc-node/register": "~1.4.2",
