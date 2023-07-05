@@ -1,3 +1,10 @@
+# [1.4.0-dev.4](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.4.0-dev.3...nestjs-auth-1.4.0-dev.4) (2023-07-05)
+
+
+### Bug Fixes
+
+* **nestjs-auth:** switch dependency removal to nx script ([0d9a1f9](https://github.com/tsangste/nx-package-test/commit/0d9a1f90bd8abcd1d4e2e47df2bc2b1811e94e9a))
+
 # [1.4.0-dev.3](https://github.com/tsangste/nx-package-test/compare/nestjs-auth-1.4.0-dev.2...nestjs-auth-1.4.0-dev.3) (2023-07-04)
 
 
