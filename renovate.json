@@ -1,24 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
-  ],
-  "lockFileMaintenance": {
-    "enabled": false
-  },
-  "packageRules": [
-    {
-      "matchPackageNames": ["nx, @nx/*"],
-      "groupName": "nx"
-    },
-    {
-      "matchPackageNames": ["@nestjs/*"],
-      "groupName": "nestjs"
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "automerge": true
-    }
+    "local>tsangste/renovate-config",
+    "local>tsangste/renovate-config:nestjs",
+    "local>tsangste/renovate-config:mikro-orm",
+    "local>tsangste/renovate-config:nx-monorepo",
+    "local>tsangste/renovate-config:github-actions"
   ]
 }
