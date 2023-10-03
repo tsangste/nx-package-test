@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install jq
-        uses: dcarbone/install-jq-action@v2.0.1
+        uses: dcarbone/install-jq-action@v2.0.2
 
       - name: Install sponge
         run: sudo apt-get install moreutils
