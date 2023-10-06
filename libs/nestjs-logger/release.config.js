@@ -2,7 +2,6 @@ const name = 'nestjs-logger'
 const srcRoot = `libs/${name}`
 
 module.exports = {
-  extends: 'release.config.base.js',
   pkgRoot: `dist/${srcRoot}`,
   branches: [{ name: 'master' }, { name: 'develop', channel: 'dev', prerelease: 'dev' }],
   tagFormat: name + '-${version}',
@@ -24,5 +23,11 @@ module.exports = {
         message: `release(version): Release ${name} ` + '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
+    [
+      "@semantic-release/github",
+      {
+        addReleases: 'bottom'
+      }
+    ]
   ],
 }

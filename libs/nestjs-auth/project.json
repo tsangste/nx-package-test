@@ -40,26 +40,6 @@
         "jestConfig": "libs/nestjs-auth/jest.config.ts",
         "passWithNoTests": true
       }
-    },
-    "release": {
-      "executor": "nx:run-commands",
-      "outputs": [],
-      "options": {
-        "commands": [
-          {
-            "command": "jq 'del(.dependencies)' ./dist/libs/nestjs-auth/package.json | sponge ./dist/libs/nestjs-auth/package.json"
-          },
-          {
-            "command": "npx semantic-release-plus --extends ./libs/nestjs-auth/release.config.js"
-          }
-        ],
-        "parallel": false
-      },
-      "dependsOn": [
-        {
-          "target": "build"
-        }
-      ]
     }
   },
   "tags": []

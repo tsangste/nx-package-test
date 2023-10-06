@@ -2,7 +2,6 @@ const name = 'nestjs-auth'
 const srcRoot = `libs/${name}`
 
 module.exports = {
-  extends: 'release.config.base.js',
   pkgRoot: `dist/${srcRoot}`,
   branches: [
     { name: 'master' },
