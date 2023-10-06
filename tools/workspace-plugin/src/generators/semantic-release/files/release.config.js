@@ -4,7 +4,6 @@ const srcRoot = `libs/${name}`
 module.exports = {
   pkgRoot: `dist/${srcRoot}`,
   branches: [{ name: 'master' }, { name: 'develop', channel: 'dev', prerelease: 'dev' }],
-  tagFormat: name + '-${version}',
   commitPaths: [`${srcRoot}/*`],
   plugins: [
     '@semantic-release/commit-analyzer',
