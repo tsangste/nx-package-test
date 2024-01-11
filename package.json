@@ -24,7 +24,7 @@
     "winston": "^3.8.2"
   },
   "devDependencies": {
-    "@nestjs/schematics": "10.0.3",
+    "@nestjs/schematics": "10.1.0",
     "@nestjs/testing": "10.3.0",
     "@nx/devkit": "16.10.0",
     "@nx/eslint-plugin": "16.10.0",
