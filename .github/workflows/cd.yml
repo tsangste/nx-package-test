@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install jq
-        uses: dcarbone/install-jq-action@v2.0.2
+        uses: dcarbone/install-jq-action@v2.1.0
 
       - name: Install sponge
         run: sudo apt-get install moreutils
@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: nrwl/nx-set-shas@v3
+      - uses: nrwl/nx-set-shas@v4
         with:
           main-branch-name: ${{ github.ref_name }}
 
