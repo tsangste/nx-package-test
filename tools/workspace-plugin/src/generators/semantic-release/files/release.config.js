@@ -1,8 +1,10 @@
+const {join} = require("node:path")
+
 const name = '<%=name%>'
 const srcRoot = `libs/${name}`
 
 module.exports = {
-  pkgRoot: `dist/${srcRoot}`,
+  pkgRoot: join('..', '..', 'dist',`${srcRoot}`),
   branches: [{ name: 'master' }, { name: 'develop', channel: 'dev', prerelease: 'dev' }],
   tagFormat: name + '-${version}',
   commitPaths: [`${srcRoot}/*`],
