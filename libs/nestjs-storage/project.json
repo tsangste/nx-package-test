@@ -32,19 +32,6 @@
       "options": {
         "jestConfig": "libs/nestjs-storage/jest.config.ts"
       }
-    },
-    "release": {
-      "executor": "nx:run-commands",
-      "outputs": [],
-      "options": {
-        "command": "npx semantic-release-plus --extends ./libs/nestjs-storage/release.config.js",
-        "parallel": false
-      },
-      "dependsOn": [
-        {
-          "target": "build"
-        }
-      ]
     }
   },
   "tags": []
