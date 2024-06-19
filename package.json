@@ -39,7 +39,7 @@
     "@semantic-release/github": "^8.0.6",
     "@swc-node/register": "1.9.2",
     "@swc/cli": "~0.3.0",
-    "@swc/core": "1.5.29",
+    "@swc/core": "1.6.1",
     "@types/jest": "29.5.12",
     "@types/node": "18.19.36",
     "@typescript-eslint/eslint-plugin": "6.21.0",
