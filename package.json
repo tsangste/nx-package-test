@@ -69,7 +69,7 @@
     "@nx/nx-win32-x64-msvc": "17.3.1"
   },
   "overrides": {
-    "semantic-release-npm-github-publish": "1.5.4",
+    "semantic-release-npm-github-publish": "1.5.5",
     "semantic-release": "^19.0.0"
   }
 }
