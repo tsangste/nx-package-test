@@ -1,0 +1,352 @@
+[NX Daemon Server] - 2024-09-02T02:12:26.201Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:12:26.204Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:12:26.206Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:12:26.207Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:12:26.209Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:12:26.210Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:12:26.211Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:12:26.211Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:12:26.212Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:12:26.212Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:12:26.212Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:12:30.089Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:12:30.091Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:12:30.097Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:12:30.097Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:12:30.099Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:12:30.101Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:12:30.102Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:12:30.102Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:12:30.103Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:12:30.103Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:12:30.103Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:13:05.671Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:13:05.673Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:13:05.676Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:13:05.676Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:13:05.678Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:13:05.679Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:13:05.680Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:13:05.680Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:13:05.682Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:13:05.682Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:13:05.682Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:13:11.018Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:13:11.021Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:13:11.023Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:13:11.024Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:13:11.025Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:13:11.026Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:13:11.027Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:13:11.027Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:13:11.029Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:13:11.029Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:13:11.029Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:13:46.432Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:13:46.434Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:13:46.436Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:13:46.437Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:13:46.439Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:13:46.441Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:13:46.441Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:13:46.441Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:13:46.442Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:13:46.442Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:13:46.442Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:13:50.262Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:13:50.265Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:13:50.267Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:13:50.268Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:13:50.270Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:13:50.272Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:13:50.272Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:13:50.272Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-09-02T02:13:50.273Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:13:50.273Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:13:50.273Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:14:24.769Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:14:24.772Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:14:24.774Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:14:24.775Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:14:24.777Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:14:24.778Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:14:24.779Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:14:24.779Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:14:24.780Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:14:24.780Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:14:24.780Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:14:28.788Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:14:28.790Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:14:28.794Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:14:28.794Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:14:28.796Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:14:28.797Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:14:28.798Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:14:28.798Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:14:28.800Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:14:28.800Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:14:28.800Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:15:03.487Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:15:03.491Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:15:03.493Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:15:03.493Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:15:03.495Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:15:03.496Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:15:03.497Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:15:03.497Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:15:03.498Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:15:03.498Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:15:03.498Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:15:08.839Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:15:08.841Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:15:08.844Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:15:08.844Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:15:08.846Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:15:08.848Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:15:08.849Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:15:08.849Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:15:08.850Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:15:08.850Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:15:08.850Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:15:44.307Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:15:44.310Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:15:44.318Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:15:44.318Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:15:44.320Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:15:44.322Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:15:44.323Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:15:44.323Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:15:44.324Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:15:44.324Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:15:44.324Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:15:48.279Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:15:48.282Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:15:48.287Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:15:48.288Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:15:48.290Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:15:48.292Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:15:48.292Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:15:48.292Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:15:48.293Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:15:48.293Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:15:48.294Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:16:22.501Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:16:22.504Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:16:22.505Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:16:22.506Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:16:22.507Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:16:22.509Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:16:22.509Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:16:22.509Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-09-02T02:16:22.510Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:16:22.511Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:16:22.511Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:16:27.410Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:16:27.413Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:16:27.415Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:16:27.416Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:16:27.417Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:16:27.418Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:16:27.419Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:16:27.419Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:16:27.421Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:16:27.421Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:16:27.421Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:17:02.011Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:17:02.014Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:17:02.016Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:17:02.016Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:17:02.018Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:17:02.020Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:17:02.021Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:17:02.021Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:17:02.022Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:17:02.022Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:17:02.022Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:17:05.529Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:17:05.532Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:17:05.534Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:17:05.535Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:17:05.536Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:17:05.538Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:17:05.539Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:17:05.539Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:17:05.540Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:17:05.540Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:17:05.540Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:17:41.011Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:17:41.013Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:17:41.016Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:17:41.016Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:17:41.018Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:17:41.019Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:17:41.020Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:17:41.020Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:17:41.022Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:17:41.022Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:17:41.022Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:17:44.495Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:17:44.497Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:17:44.504Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:17:44.505Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:17:44.507Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:17:44.509Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:17:44.509Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:17:44.509Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:17:44.510Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:17:44.510Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:17:44.510Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:18:19.118Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:18:19.121Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:18:19.123Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:18:19.124Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:18:19.126Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:18:19.128Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:18:19.128Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:18:19.128Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-09-02T02:18:19.129Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:18:19.129Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:18:19.129Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:18:22.646Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:18:22.649Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:18:22.651Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:18:22.652Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:18:22.654Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:18:22.656Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:18:22.656Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:18:22.656Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-09-02T02:18:22.657Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:18:22.657Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:18:22.658Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:18:57.018Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:18:57.020Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:18:57.022Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:18:57.023Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:18:57.025Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:18:57.027Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:18:57.027Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:18:57.028Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:18:57.028Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:18:57.028Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:18:57.029Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:19:00.459Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:19:00.462Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:19:00.470Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:19:00.470Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:19:00.472Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:19:00.474Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:19:00.475Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:19:00.475Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:19:00.476Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:19:00.476Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:19:00.476Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:19:34.803Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:19:34.806Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:19:34.808Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:19:34.809Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:19:34.810Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:19:34.812Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:19:34.813Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:19:34.813Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:19:34.814Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:19:34.814Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:19:34.814Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:19:38.368Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:19:38.371Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:19:38.376Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:19:38.377Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:19:38.379Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:19:38.381Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:19:38.382Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:19:38.382Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:19:38.383Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:19:38.383Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:19:38.384Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:20:12.871Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:20:12.873Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:20:12.876Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:20:12.876Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:20:12.878Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:20:12.879Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:20:12.881Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:20:12.881Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-09-02T02:20:12.882Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:20:12.882Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:20:12.882Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:20:18.064Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:20:18.067Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:20:18.069Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:20:18.070Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:20:18.072Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:20:18.073Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:20:18.074Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:20:18.074Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:20:18.075Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:20:18.075Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:20:18.075Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:20:52.528Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:20:52.531Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:20:52.533Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:20:52.533Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:20:52.535Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:20:52.536Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:20:52.537Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:20:52.537Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:20:52.539Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:20:52.539Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:20:52.539Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:20:56.388Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:20:56.391Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:20:56.393Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:20:56.394Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:20:56.396Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:20:56.398Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:20:56.398Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:20:56.399Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:20:56.401Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:20:56.401Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:20:56.401Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:21:30.968Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:21:30.970Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:21:30.972Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:21:30.973Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:21:30.975Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:21:30.977Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:21:30.978Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:21:30.978Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:21:30.978Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:21:30.979Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:21:30.979Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:21:42.323Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:21:42.326Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:21:42.331Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:21:42.331Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:21:42.333Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:21:42.336Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:21:42.336Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:21:42.336Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-09-02T02:21:42.337Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:21:42.337Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:21:42.338Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:22:17.575Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:22:17.577Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:22:17.579Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:22:17.580Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:22:17.582Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:22:17.584Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:22:17.584Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:22:17.585Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:22:17.585Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:22:17.586Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:22:17.586Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
+[NX Daemon Server] - 2024-09-02T02:37:18.503Z - Started listening on: /tmp/ddd922afa82480488a54/d.sock
+[NX Daemon Server] - 2024-09-02T02:37:18.506Z - [WATCHER]: Subscribed to changes within: /tmp/renovate/repos/github/tsangste/nx-package-test (native)
+[NX Daemon Server] - 2024-09-02T02:37:18.509Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:37:18.510Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-02T02:37:18.512Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-02T02:37:18.513Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:37:18.514Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-02T02:37:18.514Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-02T02:37:18.515Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (sources)
+[NX Daemon Server] - 2024-09-02T02:37:18.515Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-02T02:37:18.515Z - [WATCHER]: Stopping the watcher for /tmp/renovate/repos/github/tsangste/nx-package-test (outputs)
