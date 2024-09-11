@@ -1,9 +1,10 @@
+const {join} = require("node:path")
+
 const name = '<%=name%>'
 const srcRoot = `libs/${name}`
 
 module.exports = {
-  extends: 'release.config.base.js',
-  pkgRoot: `dist/${srcRoot}`,
+  pkgRoot: join('..', '..', 'dist',`${srcRoot}`),
   branches: [{ name: 'master' }, { name: 'develop', channel: 'dev', prerelease: 'dev' }],
   tagFormat: name + '-${version}',
   commitPaths: [`${srcRoot}/*`],
@@ -24,5 +25,11 @@ module.exports = {
         message: `release(version): Release ${name} ` + '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
+    [
+      "@semantic-release/github",
+      {
+        addReleases: 'bottom'
+      }
+    ]
   ],
 }

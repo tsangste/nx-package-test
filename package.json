@@ -10,6 +10,9 @@
     "package:remove": "node tools/scripts/package-remove.mjs"
   },
   "private": true,
+  "workspaces": [
+    "libs/*"
+  ],
   "dependencies": {
     "@aws-sdk/client-s3": "^3.304.0",
     "@nestjs/common": "10.4.1",
@@ -24,6 +27,7 @@
     "winston": "^3.8.2"
   },
   "devDependencies": {
+    "@anolilab/multi-semantic-release": "^1.0.2",
     "@nestjs/schematics": "10.1.4",
     "@nestjs/testing": "10.4.1",
     "@nx/devkit": "19.7.2",
@@ -36,7 +40,11 @@
     "@nx/plugin": "19.7.2",
     "@nx/webpack": "19.7.2",
     "@nx/workspace": "19.7.2",
-    "@semantic-release/github": "^8.0.6",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.1",
+    "@semantic-release/npm": "^11.0.0",
     "@swc-node/register": "1.9.2",
     "@swc/cli": "0.3.14",
     "@swc/core": "1.5.7",
@@ -53,16 +61,11 @@
     "node-mocks-http": "^1.12.1",
     "nx": "19.7.2",
     "prettier": "^2.6.2",
+    "semantic-release": "^22.0.5",
     "semantic-release-jira-notes": "^3.0.0",
-    "semantic-release-npm-github-publish": "1.5.4",
-    "semantic-release-plus": "^20.0.0",
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
     "typescript": "5.5.4",
     "yaml": "^2.3.1"
-  },
-  "overrides": {
-    "semantic-release-npm-github-publish": "1.5.4",
-    "semantic-release": "^19.0.0"
   }
 }
