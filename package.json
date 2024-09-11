@@ -61,13 +61,6 @@
     "typescript": "5.5.4",
     "yaml": "^2.3.1"
   },
-  "optionalDependencies": {
-    "@nx/nx-darwin-arm64": "17.3.1",
-    "@nx/nx-darwin-x64": "17.3.1",
-    "@nx/nx-linux-x64-gnu": "17.3.1",
-    "@nx/nx-linux-x64-musl": "17.3.1",
-    "@nx/nx-win32-x64-msvc": "17.3.1"
-  },
   "overrides": {
     "semantic-release-npm-github-publish": "1.5.4",
     "semantic-release": "^19.0.0"
