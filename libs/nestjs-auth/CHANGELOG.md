@@ -1,3 +1,19 @@
+# @tsangste/nestjs-auth [1.4.0](https://github.com/tsangste/nx-package-test/compare/@tsangste/nestjs-auth@1.3.0...@tsangste/nestjs-auth@1.4.0) (2024-09-12)
+
+
+### Bug Fixes
+
+* **nestjs-auth:** add peerDependencies ([3670003](https://github.com/tsangste/nx-package-test/commit/3670003059df029e371b085fe1fc4b29aaddbd9d))
+* **nestjs-auth:** fix adding of dependencies when building ([81fbd1f](https://github.com/tsangste/nx-package-test/commit/81fbd1f5f2edac637dcd214df968f5483814698f))
+* **nestjs-auth:** switch dependency removal to nx script ([0d9a1f9](https://github.com/tsangste/nx-package-test/commit/0d9a1f90bd8abcd1d4e2e47df2bc2b1811e94e9a))
+
+
+### Features
+
+* add more logging ([#338](https://github.com/tsangste/nx-package-test/issues/338)) ([709debf](https://github.com/tsangste/nx-package-test/commit/709debf8887142f6f620c57ce9519e5b4ad346db))
+* **nestjs-auth:** add log to guard ([#337](https://github.com/tsangste/nx-package-test/issues/337)) ([3f31eb0](https://github.com/tsangste/nx-package-test/commit/3f31eb0aad8c99ef419c6685d0d4247ef47037c2))
+* **nestjs-auth:** update user ([6adb914](https://github.com/tsangste/nx-package-test/commit/6adb9149c4b9237f7a5f5f55b194cac81ad1e53f))
+
 # @tsangste/nestjs-auth [1.4.0-dev.6](https://github.com/tsangste/nx-package-test/compare/@tsangste/nestjs-auth@1.4.0-dev.5...@tsangste/nestjs-auth@1.4.0-dev.6) (2024-09-12)
 
 
