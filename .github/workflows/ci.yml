@@ -49,6 +49,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          jq '.workspace = ["libs/${{ vars.APP }}"]' ./package.json | sponge ./package.json \
-          GITHUB_REF=develop npx multi-semantic-release \
+          jq '.workspace = ["libs/${{ vars.APP }}"]' ./package.json | sponge ./package.json
+          GITHUB_REF=develop npx multi-semantic-release
           git restore package.json
