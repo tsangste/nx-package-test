@@ -45,9 +45,9 @@ jobs:
           main-branch-name: master
       - name: NPM clean install
         run: npm ci
-      - run: npx nx affected --target=lint --parallel=3
-      - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
-      - run: npx nx affected --target=build --parallel=3
+      - run: npx nx run ${{ inputs.package }}:lint
+      - run: npx nx run ${{ inputs.package }}:test:ci
+      - run: npx nx run ${{ inputs.package }}:build
       - name: Release
         if: success()
         env:
