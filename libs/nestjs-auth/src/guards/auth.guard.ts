@@ -1,12 +1,20 @@
 import { Reflector } from '@nestjs/core'
-import { CanActivate, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common'
+import {
+  CanActivate,
+  ExecutionContext,
+  Inject,
+  Injectable,
+  Logger,
+  LoggerService,
+  UnauthorizedException
+} from '@nestjs/common'
 
 import { Request } from 'express'
 import { Observable } from 'rxjs'
 
 @Injectable()
 export class AuthGuard implements CanActivate {
-  constructor(private readonly reflector: Reflector) {}
+  constructor(@Inject(Logger) private readonly logger: LoggerService, private readonly reflector: Reflector) {}
 
   canActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {
     const allowUnauthorizedRequest =
@@ -17,6 +25,7 @@ export class AuthGuard implements CanActivate {
     const user = request.user
 
     if (!allowUnauthorizedRequest && !user) {
+      this.logger.warn('unauthorized user')
       throw new UnauthorizedException()
     }
 
