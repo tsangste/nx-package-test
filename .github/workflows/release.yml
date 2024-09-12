@@ -64,8 +64,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          jq '.workspace = ["libs/${{ inputs.package }}"]' ./package.json | sponge ./package.json \
-          GITHUB_REF=master npx multi-semantic-release \
+          jq '.workspace = ["libs/${{ inputs.package }}"]' ./package.json | sponge ./package.json
+          GITHUB_REF=master npx multi-semantic-release
           git restore package.json
   master_to_dev:
     name: merge master into dev
