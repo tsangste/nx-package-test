@@ -18,6 +18,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
       - uses: nrwl/nx-set-shas@v4
         with:
           main-branch-name: ${{ github.ref_name }}

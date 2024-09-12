@@ -44,6 +44,11 @@ jobs:
           ref: master
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
       - name: Set NX sha
         uses: nrwl/nx-set-shas@v4
         with:
@@ -60,7 +65,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           jq '.workspace = ["libs/${{ inputs.package }}"]' ./package.json | sponge ./package.json \
-          GITHUB_REF=master multi-semantic-release \
+          GITHUB_REF=master npx multi-semantic-release \
           git restore package.json
   master_to_dev:
     name: merge master into dev
