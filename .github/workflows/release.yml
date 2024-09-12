@@ -33,6 +33,11 @@ jobs:
       - dev_to_master
     runs-on: ubuntu-latest
     steps:
+      - name: Install jq
+        uses: dcarbone/install-jq-action@v2.1.0
+      - name: Install sponge
+        if: startsWith(runner.name, 'GitHub Actions')
+        run: sudo apt-get install moreutils
       - name: Checkout git repo
         uses: actions/checkout@v4
         with:
