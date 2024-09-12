@@ -1,12 +1,12 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nrwl/nx", "unicorn", "simple-import-sort"],
+  "plugins": ["@nx", "unicorn", "simple-import-sort"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-        "@nrwl/nx/enforce-module-boundaries": [
+        "@nx/enforce-module-boundaries": [
           "error",
           {
             "enforceBuildableLibDependency": true,
@@ -20,7 +20,8 @@
           }
         ],
         "max-len": [
-          "error", {
+          "error",
+          {
             "code": 120,
             "ignoreUrls": true,
             "ignoreStrings": true
@@ -31,19 +32,12 @@
           "error",
           {
             "groups": [
-              // Side effect imports.
               ["^\\u0000"],
-              // Native node packages.
               ["^node:"],
-              // Packages `nestjs` related packages come first.
               ["@nestjs/testing", "@nestjs/core", "@nestjs/common", "^(@nestjs)(/.*|$)"],
-              // External packages
               ["^@?\\w"],
-              // Internal packages.
               ["^(@tsangste)(/.*|$)"],
-              // Service alias.
               ["^(~)(/.*.module)", "^(~)(/.*.controller)", "^(~)(/.*.service)", "^(~)(/.*|$)"],
-              // Parent imports. Put `..` last.
               [
                 "^\\.\\.(/.*.module)",
                 "^\\.\\.(/.*.controller)",
@@ -51,7 +45,6 @@
                 "^\\.\\.(?!/?$)",
                 "^\\.\\./?$"
               ],
-              // Other relative imports. Put same-folder imports and `.` last.
               [
                 "^.+\\.s?module",
                 "^.+\\.s?controller",
@@ -72,10 +65,8 @@
         "project": "tsconfig.base.json",
         "sourceType": "module"
       },
-      "plugins": [
-        "@typescript-eslint/eslint-plugin"
-      ],
-      "extends": ["plugin:@nrwl/nx/typescript"],
+      "plugins": ["@typescript-eslint/eslint-plugin"],
+      "extends": ["plugin:@nx/typescript"],
       "rules": {
         "@typescript-eslint/no-empty-function": [
           "error",
@@ -86,7 +77,8 @@
         "@typescript-eslint/no-unused-vars": [
           "warn",
           {
-            "argsIgnorePattern": "^_", "ignoreRestSiblings": true
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
           }
         ],
         "@typescript-eslint/no-misused-promises": "error",
@@ -99,22 +91,26 @@
           "error",
           {
             "selector": "variable",
-            "modifiers": [
-              "const", "exported"
-            ],
-            "types": [
-              "function"
-            ],
-            "format": [
-              "camelCase", "PascalCase"
-            ]
+            "modifiers": ["const", "exported"],
+            "types": ["function"],
+            "format": ["camelCase", "PascalCase"]
           }
-        ]
+        ],
+        "@typescript-eslint/no-extra-semi": "error",
+        "no-extra-semi": "off"
       }
     },
     {
       "files": ["*.js", "*.jsx"],
-      "extends": ["plugin:@nrwl/nx/javascript"],
+      "extends": ["plugin:@nx/javascript"],
+      "rules": {
+        "@typescript-eslint/no-extra-semi": "error",
+        "no-extra-semi": "off"
+      }
+    },
+    {
+      "files": "*.json",
+      "parser": "jsonc-eslint-parser",
       "rules": {}
     }
   ]

@@ -1,13 +1,11 @@
+const { join } = require('node:path')
+
 const name = 'nestjs-auth'
 const srcRoot = `libs/${name}`
 
 module.exports = {
-  extends: 'release.config.base.js',
-  pkgRoot: `dist/${srcRoot}`,
-  branches: [
-    { name: 'master' },
-    { name: 'develop', channel: 'dev', prerelease: 'dev' },
-  ],
+  pkgRoot: join('..', '..', 'dist',`${srcRoot}`),
+  branches: [{ name: 'master' }, { name: 'develop', channel: 'dev', prerelease: 'dev' }],
   tagFormat: name + '-${version}',
   commitPaths: [`${srcRoot}/*`],
   plugins: [
@@ -19,22 +17,24 @@ module.exports = {
     [
       '@semantic-release/changelog',
       {
-        changelogFile: `${srcRoot}/CHANGELOG.md`,
+        changelogFile: 'CHANGELOG.md',
       },
     ],
     '@semantic-release/npm',
     [
       '@semantic-release/git',
       {
-        assets: [`${srcRoot}/package.json`, `${srcRoot}/CHANGELOG.md`],
+        assets: ['package.json', 'CHANGELOG.md'],
         message: `release(version): Release ${name} ` + '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
     [
-      "@semantic-release/github",
+      '@semantic-release/github',
       {
-        addReleases: 'bottom'
-      }
-    ]
+        addReleases: 'bottom',
+        successComment: false,
+        failTitle: false,
+      },
+    ],
   ],
 }

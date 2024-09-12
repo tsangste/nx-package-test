@@ -23,33 +23,15 @@
       "dependsOn": ["build"]
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["libs/nestjs-storage/**/*.ts"]
-      }
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/nestjs-storage/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "libs/nestjs-storage/jest.config.ts"
       }
-    },
-    "release": {
-      "executor": "nx:run-commands",
-      "outputs": [],
-      "options": {
-        "command": "npx semantic-release-plus --extends ./libs/nestjs-storage/release.config.js",
-        "parallel": false
-      },
-      "dependsOn": [
-        {
-          "projects": "self",
-          "target": "build"
-        }
-      ]
     }
   },
   "tags": []

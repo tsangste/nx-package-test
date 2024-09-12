@@ -1,27 +1,27 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "app",
-  "affected": {
-    "defaultBase": "develop"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
-      }
-    }
-  },
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
+      "inputs": ["production", "^production"],
+      "cache": true
     },
-    "test": {
-      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
+    "@nx/jest:jest": {
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
+      "cache": true,
+      "options": {
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
     },
-    "lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
+    "@nx/eslint:lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+      "cache": true
     }
   },
   "defaultProject": "api",
@@ -35,5 +35,7 @@
       "!{projectRoot}/jest.config.[jt]s",
       "!{projectRoot}/.eslintrc.json"
     ]
-  }
+  },
+  "useInferencePlugins": false,
+  "defaultBase": "develop"
 }

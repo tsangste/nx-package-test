@@ -12,12 +12,13 @@ import { StorageService } from './services/storage.service'
       provide: S3Client,
       inject: [ConfigService],
       useFactory: (config: ConfigService) => {
+        const accessKeyId = config.get<string>('AWS_ACCESS_KEY_ID')
+        const secretAccessKey = config.get<string>('AWS_SECRET_ACCESS_KEY')
+        const credentials = accessKeyId && secretAccessKey ? { accessKeyId, secretAccessKey } : null
+
         return new S3Client({
           region: config.get<string>('AWS_REGION', 'eu-west-2'),
-          credentials: {
-            accessKeyId: config.get<string>('AWS_ACCESS_KEY_ID', ''),
-            secretAccessKey: config.get<string>('AWS_SECRET_ACCESS_KEY', '')
-          }
+          credentials,
         })
       }
     },

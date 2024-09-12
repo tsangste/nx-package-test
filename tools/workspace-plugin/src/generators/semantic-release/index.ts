@@ -1,15 +1,15 @@
-import { join } from 'path'
+import { join } from 'node:path'
 
 import {
-  Tree,
-  updateJson,
+  formatFiles,
   generateFiles,
+  installPackagesTask,
   joinPathFragments,
   readProjectConfiguration,
-  formatFiles,
-  installPackagesTask
-} from '@nrwl/devkit'
-import { libraryGenerator } from '@nrwl/nest'
+  Tree,
+  updateJson,
+} from '@nx/devkit'
+import { libraryGenerator } from '@nx/nest'
 import { parse, stringify } from 'yaml'
 
 interface SemanticReleaseOptions {
@@ -21,12 +21,7 @@ export default async function (tree: Tree, schema: SemanticReleaseOptions) {
 
   const libraryRoot = readProjectConfiguration(tree, schema.name).root
 
-  generateFiles(
-    tree,
-    joinPathFragments(__dirname, './files'),
-    libraryRoot,
-    schema
-  )
+  generateFiles(tree, joinPathFragments(__dirname, './files'), libraryRoot, schema)
 
   updateJson(tree, join(libraryRoot, 'package.json'), pkgJson => {
     pkgJson.version = '0.0.0-semantic-release'
@@ -35,18 +30,18 @@ export default async function (tree: Tree, schema: SemanticReleaseOptions) {
 
   updateJson(tree, join(libraryRoot, 'project.json'), prJson => {
     prJson.targets.release = {
-      "executor": "nx:run-commands",
-      "outputs": [],
-      "options": {
-        "command": `npx semantic-release-plus --extends ./libs/${schema.name}/release.config.js`,
-        "parallel": false
+      executor: 'nx:run-commands',
+      outputs: [],
+      options: {
+        command: `npx semantic-release-plus --extends ./libs/${schema.name}/release.config.js`,
+        parallel: false,
       },
-      "dependsOn": [
+      dependsOn: [
         {
-          "projects": "self",
-          "target": "build"
-        }
-      ]
+          projects: 'self',
+          target: 'build',
+        },
+      ],
     }
 
     return prJson
@@ -60,7 +55,7 @@ export default async function (tree: Tree, schema: SemanticReleaseOptions) {
   await formatFiles(tree)
 
   return () => {
-    installPackagesTask(tree);
+    installPackagesTask(tree)
   }
 }
 

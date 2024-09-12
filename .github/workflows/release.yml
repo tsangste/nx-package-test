@@ -9,18 +9,21 @@ on:
           - nestjs-auth
           - nestjs-logger
           - nestjs-storage
+
+concurrency: release
+
 jobs:
   dev_to_master:
     name: merge dev into master
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Merge branch
         uses: emiliopedrollo/auto-merge@v1.2.0
         if: github.ref_name == 'develop'
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           source_ref: develop
           target_branch: master
           allow_fast_forward: false
@@ -31,28 +34,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: master
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
       - name: Set NX sha
-        uses: nrwl/nx-set-shas@v3
+        uses: nrwl/nx-set-shas@v4
         with:
           main-branch-name: master
       - name: NPM clean install
         run: npm ci
-      - run: npx nx workspace-lint
-      - run: npx nx affected --target=lint --parallel=3
-      - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
-      - run: npx nx affected --target=build --parallel=3
+      - run: npx nx run ${{ inputs.package }}:lint
+      - run: npx nx run ${{ inputs.package }}:test:ci
+      - run: npx nx run ${{ inputs.package }}:build
       - name: Release
         if: success()
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          GITHUB_REF=master npx nx run ${{ inputs.package }}:release
+          DIRS=$(find ./libs -maxdepth 1 -type d | grep -v "^./libs$" | grep -v "${{ inputs.package }}")
+          EXCLUDE_PATTERNS=$(echo "$DIRS" | sed 's|^./||; s|$|/**|' | tr '\n' ',' | sed 's/,$//')
+          GITHUB_REF=master npx multi-semantic-release --ignore-packages=$EXCLUDE_PATTERNS
   master_to_dev:
     name: merge master into dev
     needs:
@@ -61,11 +70,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Merge branch
         uses: emiliopedrollo/auto-merge@v1.2.0
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           source_ref: master
           target_branch: develop
           allow_fast_forward: false

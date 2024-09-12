@@ -17,22 +17,22 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: amannn/action-semantic-pull-request@v4
-        if: github.ref_name != 'master' && github.ref_name != 'stabilise'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: nrwl/nx-set-shas@v3
+      - name: Set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - uses: nrwl/nx-set-shas@v4
         with:
           main-branch-name: ${{ github.base_ref || github.ref_name }}
 
       - run: npm ci
 
-      - run: npx nx workspace-lint
       - run: npx nx affected --target=lint --parallel=3
       - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
       - run: npx nx affected --target=build --parallel=3

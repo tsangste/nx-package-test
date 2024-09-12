@@ -1,5 +1,3 @@
-
-
 # NxPackageTest
 
 This project was generated using [Nx](https://nx.dev).
@@ -23,11 +21,11 @@ Below are our core plugins:
 - [Angular](https://angular.io)
   - `npm install --save-dev @nrwl/angular`
 - [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
+  - `npm install --save-dev @nx/nest`
 - [Express](https://expressjs.com)
   - `npm install --save-dev @nrwl/express`
 - [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+  - `npm install --save-dev @nx/node`
 
 There are also many [community plugins](https://nx.dev/community) you could add.
 

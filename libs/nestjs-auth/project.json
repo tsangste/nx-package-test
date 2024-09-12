@@ -22,39 +22,20 @@
       },
       "dependsOn": [
         {
-          "projects": "self",
           "target": "build"
         }
       ]
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["libs/nestjs-auth/**/*.ts"]
-      }
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/libs/nestjs-auth"],
       "options": {
-        "jestConfig": "libs/nestjs-auth/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "libs/nestjs-auth/jest.config.ts"
       }
-    },
-    "release": {
-      "executor": "nx:run-commands",
-      "outputs": [],
-      "options": {
-        "command": "npx semantic-release-plus --extends ./libs/nestjs-auth/release.config.js",
-        "parallel": false
-      },
-      "dependsOn": [
-        {
-          "projects": "self",
-          "target": "build"
-        }
-      ]
     }
   },
   "tags": []
