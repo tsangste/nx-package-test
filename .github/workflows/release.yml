@@ -45,9 +45,9 @@ jobs:
           main-branch-name: master
       - name: NPM clean install
         run: npm ci
-      - run: npx nx affected --target=lint --parallel=3
-      - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
-      - run: npx nx affected --target=build --parallel=3
+      - run: npx nx run ${{ inputs.package }}:lint
+      - run: npx nx run ${{ inputs.package }}:test:ci
+      - run: npx nx run ${{ inputs.package }}:build
       - name: Release
         if: success()
         env:
@@ -55,7 +55,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           jq '.workspace = ["libs/${{ inputs.package }}"]' ./package.json | sponge ./package.json \
-          GITHUB_REF=master multi-semantic-release --tag-format="${name}-${version}" \
+          GITHUB_REF=master multi-semantic-release \
           git restore package.json
   master_to_dev:
     name: merge master into dev
