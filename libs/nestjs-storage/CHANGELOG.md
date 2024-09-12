@@ -1,3 +1,10 @@
+# @tsangste/nestjs-storage [1.1.0-dev.3](https://github.com/tsangste/nx-package-test/compare/@tsangste/nestjs-storage@1.1.0-dev.2...@tsangste/nestjs-storage@1.1.0-dev.3) (2024-09-12)
+
+
+### Features
+
+* add more logging ([#338](https://github.com/tsangste/nx-package-test/issues/338)) ([709debf](https://github.com/tsangste/nx-package-test/commit/709debf8887142f6f620c57ce9519e5b4ad346db))
+
 # [1.1.0-dev.2](https://github.com/tsangste/nx-package-test/compare/nestjs-storage-1.1.0-dev.1...nestjs-storage-1.1.0-dev.2) (2023-07-04)
 
 
