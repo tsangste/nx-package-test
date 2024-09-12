@@ -24,6 +24,14 @@ module.exports = {
         assets: ['package.json', 'CHANGELOG.md'],
         message: `release(version): Release ${name} ` + '${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
-    ]
+    ],
+    [
+      '@semantic-release/github',
+      {
+        addReleases: 'bottom',
+        successComment: false,
+        failTitle: false,
+      },
+    ],
   ],
 }
