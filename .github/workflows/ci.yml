@@ -43,6 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           DIRS=$(find ./libs -maxdepth 1 -type d | grep -v "^./libs$" | grep -v "${{ vars.APP }}")
+          echo $DIRS
           EXCLUDE_PATTERNS=$(echo "$DIRS" | sed 's|$|/**|')
           echo $EXCLUDE_PATTERNS
           GITHUB_REF=develop npx multi-semantic-release --ignore-packages=$EXCLUDE_PATTERNS
