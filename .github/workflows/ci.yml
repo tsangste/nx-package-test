@@ -17,6 +17,13 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
+      - name: Install jq
+        uses: dcarbone/install-jq-action@v2.1.0
+
+      - name: Install sponge
+        if: startsWith(runner.name, 'GitHub Actions')
+        run: sudo apt-get install moreutils
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -26,7 +33,6 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'npm'
-
       - uses: nrwl/nx-set-shas@v4
         with:
           main-branch-name: ${{ github.base_ref || github.ref_name }}
@@ -35,4 +41,14 @@ jobs:
 
       - run: npx nx affected --target=lint --parallel=3
       - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
-      - run: npx nx affected --target=build --parallel=3
+      - run: npx nx run ${{ vars.APP }}:build
+
+      - name: Release
+        if: success()
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          jq '.workspace = ["libs/${{ vars.APP }}"]' ./package.json | sponge ./package.json \
+          GITHUB_REF=develop npx multi-semantic-release \
+          git restore package.json
