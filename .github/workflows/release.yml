@@ -33,11 +33,6 @@ jobs:
       - dev_to_master
     runs-on: ubuntu-latest
     steps:
-      - name: Install jq
-        uses: dcarbone/install-jq-action@v2.1.0
-      - name: Install sponge
-        if: startsWith(runner.name, 'GitHub Actions')
-        run: sudo apt-get install moreutils
       - name: Checkout git repo
         uses: actions/checkout@v4
         with:
@@ -64,9 +59,9 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          jq '.workspace = ["libs/${{ inputs.package }}"]' ./package.json | sponge ./package.json
-          GITHUB_REF=master npx multi-semantic-release
-          git restore package.json
+          DIRS=$(find ./libs -maxdepth 1 -type d | grep -v "^./libs$" | grep -v "${{ inputs.package }}")
+          EXCLUDE_PATTERNS=$(echo "$DIRS" | sed 's|^./||; s|$|/**|' | tr '\n' ',' | sed 's/,$//')
+          GITHUB_REF=develop npx multi-semantic-release --ignore-packages=$EXCLUDE_PATTERNS
   master_to_dev:
     name: merge master into dev
     needs:
