@@ -50,7 +50,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Directories in the specified path:"
-          find ./lib -maxdepth 1 -type d
+          find ./libs -maxdepth 1 -type d
           jq '.workspace = ["libs/${{ vars.APP }}"]' ./package.json | sponge ./package.json
           GITHUB_REF=develop npx multi-semantic-release
           git restore package.json
