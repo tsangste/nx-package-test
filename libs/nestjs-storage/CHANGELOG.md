@@ -1,3 +1,13 @@
+# @tsangste/nestjs-storage [1.1.0](https://github.com/tsangste/nx-package-test/compare/@tsangste/nestjs-storage@1.0.0...@tsangste/nestjs-storage@1.1.0) (2024-09-16)
+
+
+### Features
+
+* add more logging ([#338](https://github.com/tsangste/nx-package-test/issues/338)) ([709debf](https://github.com/tsangste/nx-package-test/commit/709debf8887142f6f620c57ce9519e5b4ad346db))
+* **nestjs-storage:** Support IAM AWS S3 Credentials ([1912ae1](https://github.com/tsangste/nx-package-test/commit/1912ae1b90de73de31d924f8c14de5892cece8cc))
+* **nestjs-store:** code edit :) ([ec1d44f](https://github.com/tsangste/nx-package-test/commit/ec1d44f6b8980a62a0d119b9d474fd75d5339d21))
+* **nestjs-store:** upload edit :) ([ad8c158](https://github.com/tsangste/nx-package-test/commit/ad8c158a58be88cbc104595f65d77cf4fd3b3b45))
+
 # @tsangste/nestjs-storage [1.1.0-dev.4](https://github.com/tsangste/nx-package-test/compare/@tsangste/nestjs-storage@1.1.0-dev.3...@tsangste/nestjs-storage@1.1.0-dev.4) (2024-09-12)
 
 
