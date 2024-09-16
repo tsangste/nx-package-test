@@ -8,12 +8,6 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - name: Install jq
-        uses: dcarbone/install-jq-action@v2.1.0
-
-      - name: Install sponge
-        run: sudo apt-get install moreutils
-
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
