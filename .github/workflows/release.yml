@@ -60,7 +60,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ "${{ inputs.package }}" = "ship everything!" ]; then
+          if [ "${{ inputs.package }}" = "SHIP EVERYTHING!!" ]; then
             GITHUB_REF=master npx multi-semantic-release
           else
             DIRS=$(find ./libs -maxdepth 1 -type d | grep -v "^./libs$" | grep -v "${{ inputs.package }}")
