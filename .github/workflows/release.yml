@@ -9,7 +9,7 @@ on:
           - nestjs-auth
           - nestjs-logger
           - nestjs-storage
-          - "SHIP EVERYTHING!!"
+          - SHIP EVERYTHING!!
 
 concurrency: release
 
