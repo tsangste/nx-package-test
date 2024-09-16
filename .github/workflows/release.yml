@@ -51,9 +51,24 @@ jobs:
           main-branch-name: master
       - name: NPM clean install
         run: npm ci
-      - run: npx nx run ${{ inputs.package }}:lint
-      - run: npx nx run ${{ inputs.package }}:test:ci
-      - run: npx nx run ${{ inputs.package }}:build
+      - name: Lint Package
+        if: inputs.package != 'SHIP EVERYTHING!!'
+        run: npx nx run ${{ inputs.package }}:lint
+      - name: Test Package
+        if: inputs.package != 'SHIP EVERYTHING!!'
+        run: npx nx run ${{ inputs.package }}:test:ci
+      - name: Build Package
+        if: inputs.package != 'SHIP EVERYTHING!!'
+        run: npx nx run ${{ inputs.package }}:build
+      - name: Lint All
+        if: inputs.package == 'SHIP EVERYTHING!!'
+        run: npx nx affected --target=lint --parallel=3
+      - name: Test All
+        if: inputs.package == 'SHIP EVERYTHING!!'
+        run: npx nx affected --target=test --parallel=3 --ci --code-coverage
+      - name: Build All
+        if: inputs.package == 'SHIP EVERYTHING!!'
+        run: npx nx run-many --target=build --parallel=3 --exclude=api --exclude=workspace-plugin
       - name: Release
         if: success()
         env:
