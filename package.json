@@ -9,6 +9,12 @@
     "package:create": "node tools/scripts/package-create.mjs",
     "package:remove": "node tools/scripts/package-remove.mjs"
   },
+  "nx": {
+    "includedScripts": [
+      "package:create",
+      "package:remove"
+    ]
+  },
   "private": true,
   "workspaces": [
     "libs/*"
