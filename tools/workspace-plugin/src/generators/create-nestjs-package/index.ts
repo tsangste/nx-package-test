@@ -17,7 +17,7 @@ interface SemanticReleaseOptions {
 }
 
 export default async function (tree: Tree, schema: SemanticReleaseOptions) {
-  await libraryGenerator(tree, { name: schema.name, importPath: `@tsangste/${schema.name}`, publishable: true })
+  await libraryGenerator(tree, { name: schema.name, directory: 'libs', importPath: `@tsangste/${schema.name}`, publishable: true })
 
   const libraryRoot = readProjectConfiguration(tree, schema.name).root
 
