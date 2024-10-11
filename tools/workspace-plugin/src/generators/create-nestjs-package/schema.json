@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
   "cli": "nx",
-  "$id": "semantic-release",
+  "$id": "CreateNestjsPackage",
   "type": "object",
   "properties": {
     "name": {

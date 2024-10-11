@@ -1,9 +1,9 @@
 {
   "generators": {
-    "semantic-release": {
-      "implementation": "./src/generators/semantic-release",
-      "schema": "./src/generators/semantic-release/schema.json",
-      "description": "Generator semantic-release"
+    "create-nestjs-package": {
+      "implementation": "./src/generators/create-nestjs-package",
+      "schema": "./src/generators/create-nestjs-package/schema.json",
+      "description": "Generator create nestjs package"
     }
   }
 }

@@ -6,4 +6,4 @@ if (!name) {
   throw new Error('missing name argument')
 }
 
-execSync(`nx workspace-generator semantic-release ${name}`, {stdio: 'inherit'});
+execSync(`nx generate create-nestjs-package ${name}`, {stdio: 'inherit'});
