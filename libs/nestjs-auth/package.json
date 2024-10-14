@@ -11,11 +11,11 @@
     "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
-    "@nestjs/common": "^10.0.0",
-    "@nestjs/core": "^10.0.0",
-    "rxjs": "^7.5.0"
+    "@nestjs/common": "10.4.4",
+    "@nestjs/core": "10.4.4",
+    "rxjs": "7.8.1"
   },
   "devDependencies": {
-    "express": "^4.0.0"
+    "express": "4.21.1"
   }
 }
