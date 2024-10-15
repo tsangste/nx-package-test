@@ -1,5 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { Logger } from '@nestjs/common'
+import { ConfigService } from '@nestjs/config'
 
 import { S3Client } from '@aws-sdk/client-s3'
 
@@ -13,6 +14,7 @@ describe('StorageService', () => {
       providers: [
         StorageService,
         Logger,
+        ConfigService,
         {
           provide: S3Client,
           useValue: {}
