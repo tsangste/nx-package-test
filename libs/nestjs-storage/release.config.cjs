@@ -29,7 +29,7 @@ module.exports = {
       '@semantic-release/github',
       {
         addReleases: 'bottom',
-        successCommentCondition: "<% return issue.user.type !== 'Bot' && issue.body.includes('nestjs-logger'); %>",
+        successCommentCondition: "<% return issue.user.type !== 'Bot' && issue.body.includes('nestjs-storage'); %>",
         failCommentCondition: '<% return false; %>',
       },
     ],
