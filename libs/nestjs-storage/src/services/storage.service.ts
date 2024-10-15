@@ -1,12 +1,28 @@
 import { Inject, Injectable, Logger, LoggerService } from '@nestjs/common'
+import { ConfigService } from '@nestjs/config'
 
-import { S3Client } from '@aws-sdk/client-s3'
+import { PutObjectCommand, S3Client } from '@aws-sdk/client-s3'
 
 @Injectable()
 export class StorageService {
-  constructor(@Inject(Logger) private readonly logger: LoggerService, private readonly s3client: S3Client) {}
+  constructor(@Inject(Logger) private readonly logger: LoggerService, private readonly config: ConfigService, private readonly s3Client: S3Client) {}
 
-  upload() {
-    this.logger.debug('upload files!')
+  async upload(key: string, data: string | Buffer) {
+    const bucketName = this.config.get('AWS_S3_BUCKET_NAME', 'bucket')
+    const prefix = this.config.get('AWS_S3_PREFIX', 'csv')
+
+    const result = await this.s3Client.send(
+      new PutObjectCommand({
+        Bucket: bucketName,
+        Key: [prefix, key].join('/'),
+        Body: data,
+        Tagging: 'csv',
+        ContentType: 'text/csv; charset=utf-8',
+      })
+    )
+
+    this.logger.log({ message: `Uploaded file to S3 bucket(${bucketName}) - ${key}`, bucketName, key })
+
+    return result
   }
 }
