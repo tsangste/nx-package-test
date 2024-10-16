@@ -1,7 +1,9 @@
+import { Readable } from 'node:stream'
+
 import { Inject, Injectable, Logger, LoggerService } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 
-import { PutObjectCommand, S3Client } from '@aws-sdk/client-s3'
+import { GetObjectCommand, PutObjectCommand, S3Client } from '@aws-sdk/client-s3'
 
 @Injectable()
 export class StorageService {
@@ -24,5 +26,21 @@ export class StorageService {
     this.logger.log({ message: `Uploaded file to S3 bucket(${bucketName}) - ${key}`, bucketName, key })
 
     return result
+  }
+
+  async download(key: string): Promise<Readable> {
+    const bucketName = this.config.get('AWS_S3_BUCKET_NAME', 'bucket')
+    const prefix = this.config.get('AWS_S3_PREFIX', 'csv')
+
+    const result = await this.s3Client.send(
+      new GetObjectCommand({
+        Bucket: bucketName,
+        Key: [prefix, key].join('/'),
+      })
+    )
+
+    this.logger.log({ message: `Downloaded file from S3 bucket(${bucketName}) - ${key}`, bucketName, key })
+
+    return result.Body as Readable
   }
 }
