@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@anolilab/multi-semantic-release": "1.1.4",
-    "@nestjs/schematics": "10.2.2",
+    "@nestjs/schematics": "10.2.3",
     "@nestjs/testing": "10.4.6",
     "@nx/devkit": "19.8.8",
     "@nx/eslint": "19.8.8",
