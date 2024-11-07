@@ -33,7 +33,7 @@
     "winston": "3.16.0"
   },
   "devDependencies": {
-    "@anolilab/multi-semantic-release": "1.1.4",
+    "@anolilab/multi-semantic-release": "1.1.5",
     "@nestjs/schematics": "10.2.3",
     "@nestjs/testing": "10.4.6",
     "@nx/devkit": "19.8.9",
