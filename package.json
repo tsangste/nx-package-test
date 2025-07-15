@@ -67,7 +67,7 @@
     "node-mocks-http": "1.17.2",
     "nx": "19.8.14",
     "prettier": "2.8.8",
-    "semantic-release": "24.2.6",
+    "semantic-release": "24.2.7",
     "semantic-release-jira-notes": "4.0.0",
     "ts-jest": "29.4.0",
     "ts-node": "10.9.2",
