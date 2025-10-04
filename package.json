@@ -30,7 +30,7 @@
     "reflect-metadata": "0.2.2",
     "rxjs": "7.8.2",
     "tslib": "2.8.1",
-    "winston": "3.17.0"
+    "winston": "3.18.3"
   },
   "devDependencies": {
     "@anolilab/multi-semantic-release": "2.0.4",
