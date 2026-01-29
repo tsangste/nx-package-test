@@ -68,7 +68,7 @@
     "nx": "19.8.14",
     "prettier": "2.8.8",
     "semantic-release": "24.2.9",
-    "semantic-release-jira-notes": "4.0.0",
+    "semantic-release-jira-notes": "4.0.2",
     "ts-jest": "29.4.6",
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
